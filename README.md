@@ -1,7 +1,7 @@
 # Lux
 
 > [!CAUTION]
-> This is a really bad library with so many missing features, its successor is in development.
+> This is a really bad library with so many missing features, its successor is [Nyx](https://github.com/nyx-ware/nyx).
 
 ## Overview
 
