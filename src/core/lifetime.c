@@ -1,4 +1,5 @@
 #include "lux/core.h"
+#include "lux/gl.h"
 #include "core.h"
 #include "../debug/debug.h"
 #include "../gl/gl.h"
@@ -39,6 +40,8 @@ int lx_init(lx_init_props props)
     memset(lt_store->key_tracker, LX_RELEASED, sizeof(lt_store->key_tracker));
     lt_store->mouse_tracker = (lx_mousepos){ 0, 0 };
     lt_store->scroll_amount = 0;
+
+    glViewport(0, 0, props.width, props.height);
 
     lt_store->alive = 1;
     return 0;

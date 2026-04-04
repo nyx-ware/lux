@@ -358,10 +358,11 @@ static int create_xdg_shell()
     xdg_toplevel_set_app_id(lt_store->window->xdg_toplevel, lt_props.title);
     xdg_toplevel_add_listener(lt_store->window->xdg_toplevel, &xdg_listener_toplevel, NULL);
 
+    // TODO: this only works on KDE, see if you can implement libdecor to deal with it for us
     if (lt_store->window->xdg_deco)
     {
         struct zxdg_toplevel_decoration_v1* deco = zxdg_decoration_manager_v1_get_toplevel_decoration(lt_store->window->xdg_deco, lt_store->window->xdg_toplevel); 
-        zxdg_toplevel_decoration_v1_set_mode(deco, ZXDG_TOPLEVEL_DECORATION_V1_MODE_SERVER_SIDE);
+        //zxdg_toplevel_decoration_v1_set_mode(deco, ZXDG_TOPLEVEL_DECORATION_V1_MODE_SERVER_SIDE);
     }
 
     wl_surface_commit(lt_store->window->wl_surface);

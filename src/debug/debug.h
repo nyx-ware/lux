@@ -10,4 +10,4 @@
     {                                                           \
         lx_error err;                                           \
         return __VA_ARGS__;                                     \
-    }                                                           \
+    }
