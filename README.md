@@ -23,4 +23,4 @@ Assuming you have CMake and a C compiler, you can run the following commands ins
 1. `cmake -S . -B build`
 2. `cmake --build build`
 
-This will build a shared library and and place it inside `./bin/`.
+This will build a shared library and place it inside `./bin/`.
